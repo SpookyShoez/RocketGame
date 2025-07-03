@@ -6,6 +6,7 @@ public class Movement : MonoBehaviour
     [SerializeField] InputAction thrust;
     [SerializeField] InputAction rotation;
     [SerializeField] float thrustStrength = 100f;
+    [SerializeField] float rotationStrength = 100f;
 
     private void OnEnable()
     {
@@ -37,6 +38,21 @@ public class Movement : MonoBehaviour
     private void ProcessRotation()
     {
         float rotationInput = rotation.ReadValue<float>();
-        Debug.Log("here is our rotatoion value: " + rotationInput);
+        if (rotationInput < 0)
+        {
+            ApplyRotation(rotationStrength);
+        }
+        else if (rotationInput > 0)
+        {
+            ApplyRotation(-rotationStrength);
+        }
+    }
+
+    private void ApplyRotation(float rotationThisFrame = 0)
+    {
+        rb.freezeRotation = true;
+        transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
+        rb.freezeRotation = false;
+
     }
 }
