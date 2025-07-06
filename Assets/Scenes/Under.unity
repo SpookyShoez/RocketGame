@@ -890,6 +890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Rocket
       objectReference: {fileID: 0}
+    - target: {fileID: 7187603599495302400, guid: 1a023797842ce4347b28ac60bbeb4a9e, type: 3}
+      propertyPath: m_Pitch
+      value: 0.69
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8739888726414096933, guid: 1a023797842ce4347b28ac60bbeb4a9e, type: 3}
     m_RemovedGameObjects: []
