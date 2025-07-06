@@ -11,11 +11,24 @@ public class CollisionHandler : MonoBehaviour
                 Debug.Log("Everything looking good.");
                 break;
             case "Finish":
-                Debug.Log("You made it to the finish line!");
+                LoadNextLevel();
                 break;
             default:
                 ReloadLevel();
                 break;
+        }
+
+        void LoadNextLevel()
+        {
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            int nextScene = currentScene + 1;
+
+            if (nextScene == SceneManager.sceneCountInBuildSettings)
+            {
+                nextScene = 0;
+            }
+
+            SceneManager.LoadScene(nextScene);
         }
 
         void ReloadLevel()
