@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 57e164c98cc67364aaf7b4b8948ea67a, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -425,7 +425,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.86
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -640,7 +640,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 5f1484ee7bc324349b68b5c05aa5e685, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -824,8 +824,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.28, y: 6.6018105, z: 14.42}
-  m_Center: {x: -0.09, y: -0.3, z: 0.85}
+  m_Size: {x: 9.28, y: 3.24, z: 14.42}
+  m_Center: {x: -0.09, y: 1.68, z: 0.85}
 --- !u!1001 &3553553811925083157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -877,10 +877,6 @@ PrefabInstance:
     - target: {fileID: 5450310262751587930, guid: 1a023797842ce4347b28ac60bbeb4a9e, type: 3}
       propertyPath: m_Name
       value: Player Rocket
-      objectReference: {fileID: 0}
-    - target: {fileID: 7187603599495302400, guid: 1a023797842ce4347b28ac60bbeb4a9e, type: 3}
-      propertyPath: m_Pitch
-      value: 0.69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

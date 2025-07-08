@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
     [SerializeField] float levelLoadDelay = 2f;
-    [SerializeField] AudioClip success;
-    [SerializeField] AudioClip crash;
+    [SerializeField] AudioClip successSFX;
+    [SerializeField] AudioClip crashSFX;
+    [SerializeField] ParticleSystem successParticles;
+    [SerializeField] ParticleSystem crashParticles;
 
     AudioSource audioSource;
+
+    bool isControllable = true;
+    
 
     void Start()
     {
@@ -17,6 +22,8 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        if (!isControllable) { return; }
+
         switch (other.gameObject.tag)
         {
             case "Friendly":
@@ -33,16 +40,20 @@ public class CollisionHandler : MonoBehaviour
 
     void StartSuccessSequence()
     {
-        // add cool sfx and particle effects here
-        audioSource.PlayOneShot(success);
+        isControllable = false; 
+        audioSource.Stop();
+        audioSource.PlayOneShot(successSFX);
+        successParticles.Play();
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
 
     void StartCrashSequence()
     {
-        // add cool sfx and particle effects here
-        audioSource.PlayOneShot(crash);
+        isControllable = false; 
+        audioSource.Stop();
+        audioSource.PlayOneShot(crashSFX);
+        crashParticles.Play();
         GetComponent<Movement>().enabled = false;
        Invoke("ReloadLevel", levelLoadDelay);
     }
