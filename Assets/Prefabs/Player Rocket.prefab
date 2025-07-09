@@ -140,8 +140,8 @@ MonoBehaviour:
   rotationStrength: 100
   mainEngineSFX: {fileID: 8300000, guid: 76f61683a6842404db9c53db90a09c6a, type: 3}
   mainEngineParticles: {fileID: 523962946066930468}
-  rightEngineParticles: {fileID: 8633109457455758761}
-  leftEngineParticles: {fileID: 4871017911668171322}
+  rightThrustParticles: {fileID: 8633109457455758761}
+  leftThrustParticles: {fileID: 4871017911668171322}
 --- !u!54 &1923377286804168452
 Rigidbody:
   m_ObjectHideFlags: 0
