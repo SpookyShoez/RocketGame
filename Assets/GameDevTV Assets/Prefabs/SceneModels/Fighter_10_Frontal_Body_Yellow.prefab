@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3865629405120154394
+--- !u!1001 &1977624950391073490
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3a527b05ad621a47849900f5849db58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000009536743
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3a527b05ad621a47849900f5849db58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3a527b05ad621a47849900f5849db58, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d3a527b05ad621a47849900f5849db58, type: 3}
       propertyPath: m_LocalRotation.y
@@ -58,20 +58,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d3a527b05ad621a47849900f5849db58, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7334123402961160196}
+      addedObject: {fileID: 2798153452915741861}
   m_SourcePrefab: {fileID: 100100000, guid: d3a527b05ad621a47849900f5849db58, type: 3}
---- !u!1 &4135448668913333835 stripped
+--- !u!1 &1707012400769619843 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d3a527b05ad621a47849900f5849db58, type: 3}
-  m_PrefabInstance: {fileID: 3865629405120154394}
+  m_PrefabInstance: {fileID: 1977624950391073490}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &7334123402961160196
+--- !u!65 &2798153452915741861
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4135448668913333835}
+  m_GameObject: {fileID: 1707012400769619843}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -84,5 +84,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 9.28, y: 6.6018105, z: 14.42}
-  m_Center: {x: -0.09, y: -0.3, z: 0.85}
+  m_Size: {x: 9.28, y: 3.24, z: 14.42}
+  m_Center: {x: -0.09, y: 1.68, z: 0.85}
